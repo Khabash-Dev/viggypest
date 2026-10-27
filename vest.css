@@ -196,7 +196,7 @@ p {
     flex-wrap: wrap;
     flex-direction: row;
     background-color: black;
-
+    gap: 1em;
     border-radius: 10px;
     background-color: #1939DE;
     font-size: 16px;
@@ -270,13 +270,17 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 300px;
     margin: auto;
     width: 90%;
     /* z-index: 30; */
 
     /* border: 2px solid black; */
+}
+
+.link a {
+    font-size: 10px;
 }
 
 .fourth {
@@ -321,13 +325,14 @@ p {
     height: 80vh;
     position: relative;
     overflow: hidden;
-    border: 2px solid black;
+    /* border: 2px solid white; */
     margin: auto;
     margin-top: -8em;
     background: url(./videos/Gangs\ of\ Lagos\ \(2023\)\ \(NetNaija.com\).mkv);
     border-radius: 20px;
     background-position: center;
     background-size: cover;
+    box-shadow: 0px 0px 6px 15px white;
 
 
     /* display: flex;
@@ -427,18 +432,22 @@ p {
 
 .box9 {
     background-color: #FFC049;
-    background-image: url(./images/imgi_34_i_Phone_14_Oct_8_9133c0be74.jpeg);
+    background-image: url("./images/2.png");
     background-position: bottom;
     background-size: 300px;
     background-repeat: no-repeat;
+
 
 }
 
 .box8 {
     background-color: #FFC049;
-    background-image: url("./images/offering1-cb2b395a20a4b251f5d895c8013f3d07.jpeg");
-    background-position: bottom;
-    background-size: 300px;
+    background-image: url("./images/17.png");
+    background-position: center;
+    /* height:100vh; */
+    background-size: cover;
+    /* background-size: 300px; */
+
     background-repeat: no-repeat;
 
 }
@@ -482,11 +491,14 @@ p {
 .link {
     padding: 10px;
     /* border: 2px solid black; */
-    width: 20vw;
-    border-radius: 20px;
+    width: 30vw;
+    border-radius: 15px;
     background-color: white;
     color: #0C1825;
     margin-bottom: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .link a {
@@ -545,12 +557,29 @@ p {
     animation-delay: 0.2s;
 }
 
-.box:nth-child(1) { animation-delay: 0.18s; }
-.box:nth-child(2) { animation-delay: 0.3s; }
-.box:nth-child(3) { animation-delay: 0.42s; }
-.box:nth-child(4) { animation-delay: 0.54s; }
-.box:nth-child(5) { animation-delay: 0.66s; }
-.box:nth-child(6) { animation-delay: 0.78s; }
+.box:nth-child(1) {
+    animation-delay: 0.18s;
+}
+
+.box:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.box:nth-child(3) {
+    animation-delay: 0.42s;
+}
+
+.box:nth-child(4) {
+    animation-delay: 0.54s;
+}
+
+.box:nth-child(5) {
+    animation-delay: 0.66s;
+}
+
+.box:nth-child(6) {
+    animation-delay: 0.78s;
+}
 
 .box1 h3 {
     font-size: 24px;
@@ -614,9 +643,13 @@ p {
     background-color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 20px;
     gap: 10em;
-
+    /* background: url(./images/1.png);
+    background-position: left;
+    background-size: 100vh;
+    background-repeat: no-repeat; */
 
 }
 
@@ -658,7 +691,7 @@ p {
 }
 
 .college h2 {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 700;
     line-height: 25.18px;
     color: #0C1825;
@@ -666,19 +699,20 @@ p {
 
 .college h3 {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 300;
     line-height: 27.2px;
     color: #0C1825;
-    margin-bottom: 12vh;
+    margin-bottom: 5vh;
 }
 
 .college img {
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin-bottom: 1vh;
     margin-top: 1vh;
+    padding: 5px;
 }
 
 .colleges {
@@ -729,7 +763,7 @@ p {
 }
 
 .box1 {
-    background-image: url(./images/offering1-cb2b395a20a4b251f5d895c8013f3d07.jpeg);
+    background-image: url(./images/13.png);
     background-size: 20vw;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -738,8 +772,8 @@ p {
 }
 
 :hover.box1 {
-    background-image: url(./images/offering5-832eb46437bb98a5d73deefdaecb5c9b.jpeg);
-    background-size: 250px;
+    background-image: url(./images/26.png);
+    background-size: 500px;
     background-repeat: no-repeat;
     background-position: bottom;
     transition: 2ms;
@@ -771,7 +805,7 @@ p {
 }
 
 .box2 {
-    background-image: url(./images/offering2-6d7fb33074543943139710e5000b175f.jpeg);
+    background-image: url(./images/1m.png);
     background-size: 20vw;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -780,7 +814,7 @@ p {
 }
 
 :hover.box2 {
-    background-image: url(./images/offering5-832eb46437bb98a5d73deefdaecb5c9b.jpeg);
+    background-image: url(./images/);
     background-size: 20vw;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -815,7 +849,7 @@ p {
 }
 
 .box3 {
-    background-image: url(./images/offering3-ea69ce49519e321e6f7310e0035ae69e.jpeg);
+    background-image: url(./images/928.png);
     background-size: 20vw;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -848,7 +882,16 @@ p {
     left: 70vh;
     bottom: 10vh;
 }
+@media (max-width:1076px){
+    .image1 {
+    left: 0vh;
+}
 
+.image2 {
+    left: 70vh;
+    bottom: 10vh;
+}
+}
 .box4 h3 {
     font-size: 24px;
     font-weight: 900;
@@ -871,6 +914,50 @@ p {
     gap: 1px;
 }
 
+.seconddrop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.seconddrop a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.firstdrop a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+/* .nav-items li .inner a {
+    width: 20vw;
+} */
+
+.nav-items .dropdown .inner {
+    width: 100vw;
+    padding: 0px;
+
+}
+
+.third a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 1em;
+}
+
+.mark {
+    display: flex;
+    flex-direction: column;
+}
+
 .dropdown {
     display: flex;
     flex-direction: column;
@@ -891,6 +978,7 @@ p {
 /* 1. Make the parent list item the structural anchor */
 li.dropdown {
     position: relative;
+
     /* Keeps the dropdown aligned to this list item */
     list-style: none;
     /* Removes default bullet points if any */
@@ -913,13 +1001,15 @@ li.dropdown .third {
     display: none;
     /* background-color: #ffffff; */
     padding: 15px;
-    min-height: 180px;
+    /* min-height: 180px; */
+
 }
 
 li.dropdown.inner {
     background-color: white;
     display: flex;
     flex-direction: row !important;
+    /* width: 200vw !important; */
 }
 
 /* 3. SHOW them on hover and arrange them in a multi-column row layout */
@@ -993,7 +1083,7 @@ li.dropdown:hover .third {
 }
 
 .box4 {
-    background-image: url(./images/offeringAlt4-748ada06ee336540b7d10cea324dbb65.jpeg);
+    background-image: url(./images/1923.png);
     background-size: 20vw;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -1004,7 +1094,7 @@ li.dropdown:hover .third {
 }
 
 :hover.box4 {
-    background-image: url(./images/offering5-832eb46437bb98a5d73deefdaecb5c9b.jpeg);
+    background-image: url(./images/15.png);
     background-size: 20vw;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -1041,7 +1131,7 @@ li.dropdown:hover .third {
 }
 
 .box5 {
-    background-image: url(./images/offering3-ea69ce49519e321e6f7310e0035ae69e.jpeg);
+    background-image: url(./images/15.png);
     background-size: 20vw;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -1086,7 +1176,7 @@ li.dropdown:hover .third {
 }
 
 .box6 {
-    background-image: url(./images/offering3-ea69ce49519e321e6f7310e0035ae69e.jpeg);
+    background-image: url(./images/650.avif);
     background-size: 20vw;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -1101,11 +1191,15 @@ li.dropdown:hover .third {
     background-position: bottom;
     transition: 2ms;
 
+
 }
+
 
 .boxes {
     display: flex;
     gap: 2.5em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .chaser {
@@ -1435,9 +1529,9 @@ li.dropdown:hover .third {
     border-radius: 20px;
     display: flex;
     flex-direction: row;
-    gap: 1em;
+    gap: 0.5em;
     margin-top: 50vh;
-    width: 50vw;
+    width: 70%;
     /* justify-content: center; */
     align-items: center;
     z-index: 30;
@@ -1451,7 +1545,9 @@ li.dropdown:hover .third {
 }
 
 .logos img {
-    width: 50px;
+    width: 30px;
+    gap: 0.5em;
+    display: flex;
 }
 
 .mom {
@@ -1630,7 +1726,16 @@ li.dropdown:hover .third {
     nav {
         width: 100%;
     }
+
+    .bottom2 {
+        padding-bottom: 20vh;
+    }
+
+    .download-content {
+        margin-right: -35vh;
+    }
 }
+
 
 @media(max-width: 958px) {
     .btn1 a {
@@ -1652,14 +1757,14 @@ li.dropdown:hover .third {
 
 @media(max-width:875px) {
 
-    .box h4,
-    h3 {
-        text-align: left;
+    .box a h4
+     {
+        margin-left: -1vh;
     }
 
     .box9 {
         background-color: #FFC049;
-        background-image: url(./images/imgi_34_i_Phone_14_Oct_8_9133c0be74.jpeg);
+        background-image: url("./images/2.png");
         background-position: bottom;
         background-size: 200px;
         background-repeat: no-repeat;
@@ -1668,9 +1773,10 @@ li.dropdown:hover .third {
 
     .box8 {
         background-color: #FFC049;
-        background-image: url("./images/offering1-cb2b395a20a4b251f5d895c8013f3d07.jpeg");
-        background-position: bottom;
-        background-size: 200px;
+        background-image: url("./images/17.png");
+        background-position: center;
+        background-size: cover;
+
         background-repeat: no-repeat;
 
     }
@@ -1924,8 +2030,8 @@ li.dropdown:hover .third {
         left: 50%;
         z-index: 1000;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        width: min(600px, calc(100vw - 20px));
-        padding: 8px;
+        /* width: 200vw; */
+        padding: 5px;
         gap: 4px;
         border: 1px solid #e6edf0;
         border-radius: 14px;
@@ -1939,6 +2045,7 @@ li.dropdown:hover .third {
     .home-page .dropdown:focus-within .inner {
         display: grid !important;
         grid-template-columns: repeat(2, 1fr);
+
     }
 
     .home-page .links .nav-items li.dropdown .firstdrop,
@@ -1954,11 +2061,13 @@ li.dropdown:hover .third {
     }
 
     .home-page .dropdown .inner a {
-        min-width: 0;
+        /* min-width: 0; */
         padding: 10px;
         border-radius: 8px;
-        background: #fff;
+        /* background: #fff; */
     }
+
+
 
     .home-page .dropdown .inner h2 {
         font-size: 13px;
@@ -2178,7 +2287,7 @@ li.dropdown:hover .third {
 
     .home-page .dropdown .inner {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        width: calc(100vw - 16px);
+        width: 300vw;
     }
 
     .section1 {
@@ -2203,6 +2312,13 @@ li.dropdown:hover .third {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
+
+@media(max-width:880px) {
+    .text h3 {
+        margin-left: 35vh;
+    }
+}
+
 
 @media (max-width: 320px) {
     body {
@@ -2285,7 +2401,7 @@ li.dropdown:hover .third {
     left: 0;
     z-index: 1000;
     grid-template-columns: repeat(2, minmax(140px, 1fr));
-    width: 25vw;
+    width: 40vw;
     gap: 1em;
     padding: 12px;
     border: 1px solid #e6edf0;
@@ -2372,6 +2488,30 @@ li.dropdown:hover .third {
     object-fit: contain;
 }
 
+@media(max-width:870px) {
+    /* .text h3{
+        margin-left: 35vh;
+    } */
+}
+
+@media(max-width:756px) {
+    .text h3 {
+        margin-left: 4vh;
+        font-size: 14px;
+    }
+
+    .download-content {
+        margin-left: -10vh;
+    }
+}
+
+@media(max-width:540px) {
+    .download-content {
+        margin-left: -35vh;
+    }
+}
+
+
 @media (max-width: 380px) {
     .home-page .dropdown .inner {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2383,9 +2523,14 @@ li.dropdown:hover .third {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 328px) {
     .home-page .logo {
         width: 128px;
+    }
+
+    .link a {
+        font-size: 14px;
+        padding-top: 2px;
     }
 
     .home-page .links .nav-items {
@@ -2531,7 +2676,7 @@ li.dropdown:hover .third {
         gap: 8px 14px;
     }
 
-    .home-page .links .nav-items > li > a {
+    .home-page .links .nav-items>li>a {
         font-size: 15px;
     }
 
@@ -2688,7 +2833,7 @@ li.dropdown:hover .third {
     .boxes {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+
         gap: 20px;
         justify-items: center;
     }
@@ -2697,7 +2842,7 @@ li.dropdown:hover .third {
         width: 100%;
         min-width: 0;
         height: 70vh;
-        
+
         padding: 20px;
         background-size: min(70%, 240px);
     }
@@ -2728,18 +2873,18 @@ li.dropdown:hover .third {
         margin: 0 auto 32px;
     }
 
-    .fifth > h3,
-    .fifth > h4 {
+    .fifth>h3,
+    .fifth>h4 {
         margin-right: auto;
         margin-left: auto;
     }
 
-    .fifth > h3 {
+    .fifth>h3 {
         font-size: clamp(38px, 5.5vw, 58px);
         line-height: 1.15;
     }
 
-    .fifth > h4 {
+    .fifth>h4 {
         max-width: 720px;
         line-height: 1.6;
     }
@@ -2756,7 +2901,7 @@ li.dropdown:hover .third {
         text-align: center;
     }
 
-    .boxes3 .big > div:not(.box) {
+    .boxes3 .big>div:not(.box) {
         width: 100%;
     }
 
@@ -2824,7 +2969,7 @@ li.dropdown:hover .third {
         text-align: center;
     }
 
-    .house > img {
+    .house>img {
         max-width: 100%;
         height: auto;
     }
@@ -2836,7 +2981,7 @@ li.dropdown:hover .third {
         gap: 8px;
     }
 
-    .txt2 > img {
+    .txt2>img {
         max-width: 100%;
         height: auto;
     }
@@ -2910,6 +3055,12 @@ li.dropdown:hover .third {
     }
 }
 
+@media(max-width:1101px) {
+  .boxes{
+    grid-template-columns:   repeat(3) 2fr;
+  }
+}
+
 @media (max-width: 875px) {
     .home-page nav {
         padding: 12px 20px;
@@ -2924,11 +3075,11 @@ li.dropdown:hover .third {
         text-align: center;
     }
 
-    .home-page .links.is-open .nav-items > li {
+    .home-page .links.is-open .nav-items>li {
         width: 100%;
     }
 
-    .home-page .links.is-open .nav-items > li > a {
+    .home-page .links.is-open .nav-items>li>a {
         justify-content: center;
     }
 
@@ -2936,7 +3087,7 @@ li.dropdown:hover .third {
         left: 50%;
         transform: translateX(-50%);
     }
-    
+
 }
 
 @media (max-width: 760px) {
@@ -3061,7 +3212,7 @@ li.dropdown:hover .third {
     }
 
     .text2 h3,
-    .fifth > h3 {
+    .fifth>h3 {
         font-size: clamp(30px, 8vw, 38px);
     }
 
@@ -3165,7 +3316,7 @@ li.dropdown:hover .third {
     }
 
     .text2 h3,
-    .fifth > h3 {
+    .fifth>h3 {
         font-size: 30px;
     }
 
@@ -3201,7 +3352,7 @@ li.dropdown:hover .third {
     .section1 p,
     .text p,
     .text2 h4,
-    .fifth > h4,
+    .fifth>h4,
     .txt2 h4 {
         font-size: 14px;
     }
@@ -3212,7 +3363,7 @@ li.dropdown:hover .third {
     }
 
     .text2 h3,
-    .fifth > h3 {
+    .fifth>h3 {
         font-size: 28px;
     }
 

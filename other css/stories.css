@@ -11,6 +11,56 @@ body {
     background-color: #121B2D;
 }
 
+.reveal {
+    opacity: 0;
+    transform: translateY(26px) scale(0.985);
+    filter: blur(6px);
+}
+
+.reveal.is-visible {
+    animation: premiumReveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.reveal-up.is-visible {
+    animation-delay: 0.12s;
+}
+
+.delay-1 {
+    animation-delay: 0.12s;
+}
+
+.delay-2 {
+    animation-delay: 0.25s;
+}
+
+.delay-3 {
+    animation-delay: 0.38s;
+}
+
+.delay-4 {
+    animation-delay: 0.5s;
+}
+
+@keyframes premiumReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(28px) scale(0.98);
+        filter: blur(6px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(-4px) scale(1.01);
+        filter: blur(1px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+}
+
 header {
     width: 100%;
     background-color: #121B2D;
@@ -116,24 +166,44 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-
-    gap: 1em;
+justify-content: left;
+    /* gap: 30em; */
     width: 95%;
     margin: auto;
     /* border: 2px solid black; */
     margin-top: 150px;
     background-color: #1734CA;
     border-radius: 20px;
-    background-image: url(../images/hand\ holding\ phone.png);
+    background-image: url(../images/ahmad.png);
     background-position: right;
     background-repeat: no-repeat;
-    background-size: 600px;
+    background-size: 700px;
     margin-bottom: 30px;
     height: 80vh;
+    position: relative;
 
 
 
 }
+.hander{
+    display: none;
+    position: absolute;
+}
+@media (max-width:761px){
+    /* .hander{
+       display: block;
+       width: 300px; */
+       .
+       .hand{
+        height: 100vh;
+       }
+    }
+    /* .hand{
+        flex-direction: column;
+    }
+    
+} */
+ 
 
 .handi h2 {
     font-size: 58.85px;
@@ -239,15 +309,16 @@ nav {
     font-weight: 600;
     line-height: 27.2px;
     color: #0C1825;
-    margin-bottom: 12vh;
+    margin-bottom: 2vh;
 }
 
 .box img {
     border-radius: 50%;
     width: 50px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin-bottom: 3vh;
     margin-top: 7vh;
+    padding: 5px;
 }
 
 .box p {
@@ -1051,7 +1122,7 @@ nav {
     left: 0;
     z-index: 1000;
     grid-template-columns: repeat(2, minmax(140px, 1fr));
-    width: 26vw;
+    width: 40vw;
     gap: 4px;
     padding: 12px;
     border: 1px solid #e6edf0;

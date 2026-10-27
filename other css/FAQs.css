@@ -29,7 +29,11 @@ nav {
     padding: 4vh;
     background-color: #121B2D;
 }
-
+.faq-page .dropdown .firstdrop,
+.faq-page .dropdown .seconddrop,
+.faq-page .dropdown .third {
+    background-color: white;
+}
 .left-side {
     display: flex;
     align-items: center;
@@ -130,6 +134,7 @@ nav {
     /* Prevents a locked wrapper height */
     position: relative !important;
     background-color: #060F21;
+    color: white;
 }
 
 .accordion-body {
@@ -140,6 +145,7 @@ nav {
     padding-left: 10px;
     border-radius: 20px;
     padding: 10px;
+    color: white;
 }
 
 .accordio-header {
@@ -175,7 +181,16 @@ details[open] .accordion-body {
 summary {
     background-color: #060F21;
     border: none;
+    color: white;
 }
+
+
+@media(max-width:1027px){
+  .dropdown .inner{
+    width: 200vw;
+  }
+}
+
 
 .section2 {
     width: 100%;
@@ -984,7 +999,7 @@ summary {
     left: 0;
     z-index: 1000;
     grid-template-columns: repeat(2, minmax(140px, 1fr));
-    width: 26vw;
+    width: 35vw;
     gap: 4px;
     padding: 10px;
     border: 1px solid #e6edf0;

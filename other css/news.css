@@ -11,6 +11,56 @@ body {
     background-color: #F2F7F8;
 }
 
+.reveal {
+    opacity: 0;
+    transform: translateY(26px) scale(0.985);
+    filter: blur(6px);
+}
+
+.reveal.is-visible {
+    animation: premiumReveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.reveal-up.is-visible {
+    animation-delay: 0.12s;
+}
+
+.delay-1 {
+    animation-delay: 0.12s;
+}
+
+.delay-2 {
+    animation-delay: 0.25s;
+}
+
+.delay-3 {
+    animation-delay: 0.38s;
+}
+
+.delay-4 {
+    animation-delay: 0.5s;
+}
+
+@keyframes premiumReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(28px) scale(0.98);
+        filter: blur(6px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(-4px) scale(1.01);
+        filter: blur(1px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+}
+
 header {
     width: 100%;
     background-color: #F2F7F8;
@@ -151,14 +201,14 @@ nav {
 }
 
 .firstsection img {
-    transform: rotate(90deg);
+    
     animation: arrow 2s linear infinite;
     transform-origin: center;
 }
 
 @keyframes arrow {
     from {
-        transform: translateY(0px);
+        transform: translateY(-20px);
     }
 
     to {
