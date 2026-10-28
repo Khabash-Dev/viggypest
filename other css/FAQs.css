@@ -496,7 +496,7 @@ summary {
 
 
 .download-section {
-    margin-top: 35vh;
+    margin-top: 20vh;
 }
 
 .logos {
@@ -507,7 +507,7 @@ summary {
     display: flex;
     flex-direction: row;
     gap: 1em;
-    margin-top: 50vh;
+    margin-top: 20vh;
     width: 50vw;
     /* justify-content: center; */
     align-items: center;
@@ -738,7 +738,7 @@ summary {
         width: calc(100% - 32px);
         height: auto;
         min-height: 88px;
-        margin: 36px auto;
+        margin: 20px auto;
         padding: 18px;
         border-radius: 18px;
         background: #fff;
@@ -923,9 +923,9 @@ summary {
 
 .faq-page .logos {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: cen0ter;
     gap: clamp(18px, 3vw, 42px);
     width: min(calc(100% - 32px), 1040px);
     min-height: 104px;
