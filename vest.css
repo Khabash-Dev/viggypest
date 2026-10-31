@@ -2213,6 +2213,9 @@ li.dropdown:hover .third {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
+@media (max-width:880px){
+    .text h3{
+        margin-left:-20vw}}
 
 @media (max-width: 520px) {
     .section1 {
